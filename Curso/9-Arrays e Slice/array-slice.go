@@ -38,6 +38,24 @@ func main() {
 	arr3[2] = 78
 	fmt.Println(slice2)
 
-	//Arrays internos...
+	//Arrays internos
+	//Make serve para especificar o tamanho do slice
+	slice3 := make([]float32, 10, 15)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) //Length
+	fmt.Println(cap(slice3)) //Capacity
 
+	//Adicionar um valor no slice
+	slice3 = append(slice3, 5)
+	slice3 = append(slice3, 6)
+	slice3 = append(slice3, 7)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
+
+	slice4 := make([]int8, 1)
+	fmt.Println(slice4)
+	slice4 = append(slice4, 10)
+	fmt.Println(len(slice4))
+	fmt.Println(cap(slice4))
 }
